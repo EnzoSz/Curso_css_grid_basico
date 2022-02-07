@@ -1,0 +1,16 @@
+.contenedor {
+    border: 5px solid blue;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px;
+    gap: 20px;
+    justify-content: center;
+}
+.item {
+    border: 5px solid red;
+    font-size: 2rem;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+}

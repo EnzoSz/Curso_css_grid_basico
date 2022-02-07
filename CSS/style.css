@@ -4,9 +4,9 @@
     display: grid;
     /* grid template me indica que cantidad de columnas va a tener la grilla, y de que tamaño*/
     /* grid-template-columns: 100px 200px 300px; */
-    grid-template-rows: 100px 200px;
+    grid-template-rows: 150px 150px;
     /* grid-template-rows: 150px 250px; */
-    grid-auto-columns: 100px;
+    grid-auto-columns: 150px;
     /* grid-auto-flow sirve para llenar la grilla en la forma en que que nosotros queramos  */
     grid-auto-flow: column;
     /* el row-gap me permite dar espacio entre filas */
@@ -14,8 +14,21 @@
     column-gap: 30px; */
     /* los dos comandos anteriores se pueden unificar con el comando gap, con este puedo dar espacio entre colummas y filas de forma uniforme. */
     gap: 40px;
+
+    /* clase 2 */
+    height: 600px;
+
+    /* justify-content: center;
+    align-content: center; */
+    place-content: end;
+    justify-items: end;
+    align-items: start;
 }
 .item {
     border: 5px solid #00bcd4;
     font-size: 4rem;
+}
+.contenedor .item:nth-child(2) {
+    justify-self: start;
+    align-self: end;
 }
